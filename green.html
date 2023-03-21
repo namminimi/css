@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+            margin:0; 
+            padding:0; 
+            box-sizing: border-box; 
+        }
+        body {
+            font-family: "맑은 고딕", sans-serif;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        a { 
+            text-decoration: none; 
+            color: inherit;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        /* 전체 크기를 1100px로 지정 작은 화면에서는 전체 크기를 100%지정
+        중앙에 배치 */
+
+        #wrap {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #header {
+            padding: 30px 0;
+        }
+
+        #header h1 {
+            
+            float: left;
+        }
+
+        #header ul {
+            
+            float: right;
+        }
+
+        #header ul li {
+            float: left;
+            padding: 0 20px;
+            
+        }
+
+        #header ul li:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+
+        .clearboth::after {
+            content:"";
+            clear: both;
+            display: block;
+        }
+
+        /* h2요소는 글자를 가운데 하고 아래에 테두리 지정 테두리 안쪽 여백 30
+        바깥쪽여백 30 */
+
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px 0;
+            margin-bottom: 30px;
+        }
+
+        #mainContents li {
+            border: 1px solid #ccc;
+            width: 30%;
+            text-align: center;
+            padding: 30px 0;
+            float: left;
+        }
+
+        #mainContents li:not(:last-child) {
+            margin-right: 5%;
+        }
+
+        #mainNotice li {
+            border-bottom: 1px solid #ccc;
+            line-height: 40px;
+        }
+
+        address {
+            float: left;
+        }
+
+        #footer {
+            padding: 30px 0
+        }
+
+        #footer h1 {
+            float: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header" class="clearboth">
+            <h1>Green</h1>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li class="rightnone"><a href="#">menu4</a></li>
+            </ul>
+        </div>
+        <div id="contents">
+            <div id="mainContents" >
+                <h2>메인 컨텐츠 01</h2>
+                <ul class="clearboth">
+                    <li>
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.
+                        <span>2022.10.12</span>
+                    </li>
+                    <li>
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.
+                        <span>2022.10.12</span>
+                    </li>
+                    <li>
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.
+                        <span>2022.10.12</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="mainNotice">
+                <h2>공지사항</h2>
+                <ul>
+                    <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+                    <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+                    <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+                    <li><a href="#">그린컴퓨터 아카데미 소식</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer" class="clearboth">
+            <address>주소: 서울특별시 용산구 한강대로 대표이사: 그린 사업자등록번호: 110-12-12345 통신판매신고:
+            </br>제 2020-서울용산-000호  
+            </address>
+            <h1>Green</h1>
+        </div>
+    </div>
+</body>
+</html>

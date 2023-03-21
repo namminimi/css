@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        address {
+            font-style: normal;
+        }
+        /* reset / */
+        body {
+            font-family:Arial, Helvetica, "맑은 고딕", sans-serif;
+            color: #222;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        #wrap {
+            background: #f1f1f1;
+            padding: 16px;
+        }
+
+        #header {
+            background: #fff;
+            height: 150px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        #headerTitle {
+            height: 120px;
+            padding-top: 25px;
+        }
+
+        #headerTitle h1 {
+            line-height: 50px;
+            font-weight: bold;
+        }
+
+        #headerTitle p {
+            line-height: 20px;
+        }
+
+        #headerMenu {
+            background: #333;
+            color: #fff;
+            line-height: 30px;
+        }
+
+        #headerMenu ul {
+            float: left;
+        }
+
+        #headerMenu ul li {
+            float: left;
+        }
+
+        #headerMenu > a {
+            float: right;
+        }
+
+        #headerMenu a {
+            padding: 0 20px;
+        }
+        
+        .clearboth::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #left {
+            width: 75%;
+            float: left;
+        }
+
+        #right {
+            width: 25%;
+            padding-left: 16px;
+            float: right;
+        }
+
+        .whiteBg {
+            background: #fff;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .grayBg {
+            background: #555;
+            color: #fff;
+            height: 120px;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        ul.grayBg {
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+
+        ul.grayBg li {
+            line-height: 30px;
+            padding: 8px;
+        }
+
+        #footer {
+            text-align: center;
+            background: #555;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단 -->
+        <div id="header">
+            <div id="headerTitle">
+                <h1>My Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div id="headerMenu" class="clearboth">
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+                <a href="#">link</a>
+            </div>
+        </div>
+        <!-- 상단 /-->
+        <!-- 본문 -->
+        <div id="contents" class="clearboth">
+            <div id="left">
+                <div class="whiteBg">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="grayBg">image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="whiteBg">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div class="grayBg">image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="whiteBg">
+                    <h2>About Me</h2>
+                    <div class="grayBg">image</div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim.</p>
+                </div>
+                <div class="whiteBg">
+                    <h2>Popular Post</h2>
+                    <ul class="grayBg">
+                        <li>image</li>
+                        <li>image</li>
+                        <li>image</li>
+                    </ul>
+                </div>
+                <div class="whiteBg">
+                    <h2>Follow Me</h2>
+                    <p>Some text..</p>
+                </div>
+            </div>
+        </div>
+        <!-- 본문 /-->
+        <!-- 하단 -->
+        <div id="footer">
+            Footer
+        </div>
+        <!-- 하단 /-->
+    </div>
+</body>
+</html>

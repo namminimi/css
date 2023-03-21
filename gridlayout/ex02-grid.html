@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .color1 {
+            background-color: lightblue;
+            grid-area: a;
+        }
+        .color2 {
+            background-color: lightgreen;
+            grid-area: b;
+        }
+        .color3 {
+            background-color: lightyellow;
+            grid-area: c;
+        }
+        .color4 {
+            background-color: lightsalmon;
+            grid-area: d;
+        } */
+
+        .color1 {
+            background-color: lightblue;
+            grid-column: 1/2;
+            grid-row: 1/-1;
+        }
+        .color2 {
+            background-color: lightgreen;
+            grid-column: 2/4;
+            grid-row: 1/2;
+            
+        }
+        .color3 {
+            background-color: lightyellow;
+            grid-column: 2/3;
+            grid-row: 2/3;
+           
+        }
+        .color4 {
+            background-color: lightsalmon;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-rows: repeat(2, 200px);
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas: 
+            "a a b b"
+            "a a c d"
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item color1">item1</div>
+        <div class="item color2">item2</div>
+        <div class="item color3">item3</div>
+        <div class="item color4">item4</div>
+    </div>
+</body>
+</html>

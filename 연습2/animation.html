@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes leftMove {
+            from {
+                left: 0;
+            }
+            to {
+                left: 500px;
+            }
+        }
+
+        @keyframes scale {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation: scale 1s infinite;
+            position: absolute;
+            /* animation-iteration-count: 3; */
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

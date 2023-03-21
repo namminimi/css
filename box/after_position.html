@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            position: relative;
+            padding-left: 30px;
+            list-style: none;
+            overflow: hidden;
+        }
+        li::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: tomato;
+            position: absolute;
+            left: 0;
+            bottom: -30px;     
+            transition: 0.5s   
+        }
+
+        li:hover::after {
+            width: 30px;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+</body>
+</html>

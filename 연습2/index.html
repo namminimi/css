@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            src: url('./fonts/BMJUA_otf.otf');
+            font-family: 'bmjua'
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: 'bmjua';
+            line-height: 1.6;
+            color: #58595B;
+            background: #f0e8d9;
+        }
+
+        #header {
+            text-align: center;
+            margin: 75px 0;
+        }
+
+        #header h1 {
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+
+        #header h2 {
+            font-size: 32px;
+        }
+
+        #imgs {
+            width: 100%;
+            max-width: 630px;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        ul {
+            float: left;
+        }
+
+        li {
+            list-style: none;
+            list-style-position: inside;
+            margin-bottom: 50px;
+            float: left;
+        }
+
+        li:nth-child(odd) {
+            margin-right: 30px;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .listFood {
+            background: white;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        .notice {
+            padding: 20px;
+        }
+
+        .notice h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .notice p {
+            font-size: 16px;
+        }
+
+        .notice a {
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            color: #0000ee;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>코딩의 민족</h1>
+            <h2>넌 코딩할 때가 제일 이뻐</h2>
+        </div>
+        <div id="imgs">
+            <ul>
+                <li>
+                    <div class="listFood">
+                        <img src="./images/chicken.jpg" alt="">
+                        <div class="notice"><h2>코딩에 빠진 닭</h2>
+                        <p>주머니가 가벼운 당신의 마음까지 생각한 착한 가격!</p>
+                        <a href="#">바로결제</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="listFood">
+                        <img src="./images/sushi.jpg" alt="">
+                        <div class="notice"><h2>코코 스시</h2>
+                        <p>주머니가 가벼운 당신의 마음까지 생각한 착한 가격!</p>
+                        <a href="#">바로 결제</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="listFood">
+                        <img src="./images/burger.jpg" alt="">
+                        <div class="notice"><h2>코데리아</h2>
+                        <p>주머니가 가벼운 당신의 마음까지 생각한 착한 가격!</p>
+                        <a href="#">바로 결제</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="listFood">
+                        <img src="./images/bibimbap.jpg" alt="">
+                        <div class="notice"><h2>코가네</h2>
+                        <p>주머니가 가벼운 당신의 마음까지 생각한 착한 가격!</p>
+                        <a href="#">바로 결제</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

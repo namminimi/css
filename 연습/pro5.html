@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: "맑은 고딕", "sans-serif";
+            color: #222;
+            line-height: 1.6;
+        }
+
+        #wrap {
+            margin: 0 auto;
+        }
+
+        li {
+            list-style: none;
+            list-style-position: inside;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #headerB {
+            background-color: black;
+        }
+
+        #headerBar {
+            background: black;
+            height: 80px;
+            width: 100%;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        #headerBar .icon ul {
+            float: left;
+            margin-top: 28px;
+        }
+
+        #headerBar .icon ul li {
+            float: left;
+            padding-right: 25px;
+            
+        } 
+
+        #headerBar .icon ul li i {
+            font-size: 25px;
+            color: white;
+        }
+
+        #headerBar #logo1 {
+            margin-top: 15px;
+            float: left;
+            margin-left: 29%;
+        }
+
+
+        #headerBar #login ul {
+            float: right;
+            margin-top: 28px;
+        }
+
+        #headerBar #login ul li {
+            float: left;
+        }
+
+        .clearBoth::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #mainImgs {
+            background-color: black;
+        }
+
+        #mainImg {
+            width: 100%;
+            max-width: 1100px;
+            height: 440px;
+            background: url("./imagess/visual.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #headerBar #login ul a {
+            font-size: 20px;
+            margin-bottom: 10px; 
+            color: white;          
+        }
+
+        #content, #footer {
+            width: 100%;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #content #containor1 {
+            border-bottom: thick double #ccc;
+            padding: 20px 0;
+        }
+
+        #content #containor1 #logo2 {
+            float: left;
+        }
+
+        #login ul li span {
+            font-size: 17px;
+        }
+
+        #content #containor1 #subList ul li a {
+            color: #222;
+        }
+
+        #content #containor1 #subList ul {
+            float: right;
+            padding-top: 10px;
+            margin-right: 20px;
+        }
+
+        #content #containor1 #subList ul li {
+            float: left;
+            padding-left: 50px;
+            font-size: 17px;
+        }
+
+        #subHead {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-weight: normal;
+        }
+
+        #product {
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        #product ul {
+            float: left;
+            margin-bottom: 40px;
+        }
+
+        #product ul li {
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            width: 25%;           
+        }
+
+        #product ul li:not(:first-child) {
+            padding-left: 56px;
+        }
+
+        #ad {
+            
+            width: 100%;
+        }
+
+        #ad div img {
+            float: left;   
+        }
+
+        #ad div #aa {
+            width: 50%; 
+        }
+
+        #ad div #bb {
+            width: 50%; 
+        }
+
+        #ad div #cc {
+            width: 25%;
+        }
+
+        #ad div #dd {
+            width: 25%;
+            height: 287.770px;
+        }
+
+        #footerSub1 {
+            background: aliceblue;
+            padding: 20px 30px;
+        }
+
+        #link #facebook {
+            float: left;
+        }
+
+        #linkList ul {
+            float: left;
+            margin-left: 270px;
+            line-height: 30px;
+        }
+
+        #linkList ul li {
+            float: left;
+            margin-right: 60px;
+        }
+
+        #linkList ul li a {
+            color: #222;
+            font-size: 15px;
+        }
+
+        #siteList select[name="site"] {
+            float: right;
+            width: 160px;
+            height: 30px;
+        }
+
+        #footerSub2 {
+            padding: 10px 65px 3px 20px;
+        }
+
+        #footerSub2 address {
+            width: 70%;
+            font-style: normal;
+            float: left;
+            font-size: 15px;
+        }
+
+        #footerSub2 div {
+            float: right;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="headerB">
+                <div id="headerBar" class="clearBoth">
+                    <div class="icon">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="material-icons">reorder</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons">search</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons">store</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="logo1">
+                        <img src="./imagess/top_logo.gif" width="170px" alt="logo">
+                    </div>
+                    <div id="login">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Login</span><i class="material-icons">chevron_right</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>join</span><i class="material-icons">chevron_right</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mainImgs">
+                <div id="mainImg"></div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="containor1" class="clearBoth">
+                <div id="logo2">
+                    <img src="./imagess/so_title.gif" alt="logo2">
+                </div>
+                <div id="subList">
+                    <ul>
+                        <li><a href="#">Brand</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Customer Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="subHead">New PRODUCT</h2>
+            <div id="product" class="clearBoth">
+                <ul>
+                    <li>
+                        <img src="./imagess/product01.gif" alt="링클 포커스 세럼 화장품">
+                        <p>X2D2</br>
+                           링클포커스세럼 wrinkle</br>
+                           focus serum
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./imagess/product02.gif" alt="링클 포커스 세럼 화장품">
+                        <p>X2D2</br>
+                           링클포커스세럼 wrinkle</br>
+                           focus serum
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./imagess/product03.gif" alt="링클 포커스 세럼 화장품">
+                        <p>X2D2</br>
+                           링클포커스세럼 wrinkle</br>
+                           focus serum
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./imagess/product04.gif" alt="링클 포커스 세럼 화장품">
+                        <p>X2D2</br>
+                           링클포커스세럼 wrinkle</br>
+                           focus serum
+                        </p>
+                    </li>
+                </ul>    
+            </div>
+            <div id="ad" class="clearBoth">
+                <div><img id="aa" src="./imagess/main_banner01.gif" alt="광고1"></div>
+                <div><img id="bb" src="./imagess/main_banner02.gif" alt="광고2"></div>
+                <div><img id="cc" src="./imagess/main_banner03.gif" alt="광고3"></div>
+                <div><img id="dd" src="./imagess/main_banner04.gif" alt="광고4"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerSub1" >
+                <div id="link" class="clearBoth">
+                    <a id="facebook" href="#"><img src="./imagess/f_icon.gif" alt="페이스북링크"></a>
+                    <div id="linkList">
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보 취급방침</a></li>
+                        </ul>
+                    </div>
+                    <div id="siteList">
+                        <select name="site" id="">
+                            <option value="a">familysite</option>
+                            <option value="b">관련사이트1</option>
+                            <option value="c">관련사이트2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="footerSub2">
+                <address>(주)LG생활건강 / 서울특별시 종로구 세문안로 58 LG광화문빌딩 110-783 대표이사 차석용
+                    / 고객상담실 080-023-7007 / 사업자등록번호 107-81-98143 COPYRIGHT & LG HOUSEHOLD
+                    HEALTH CARE LTD. 2015 ALL RIGHT RESERVED.
+                </address>
+                <div>
+                    <img src="./imagess/bottom_logo.gif" alt="lg생활건강 로고">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

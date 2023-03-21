@@ -1,0 +1,363 @@
+@charset "utf-8";
+* { margin:0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+address, em { font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+img { vertical-align: top; border:0; }
+table, tr, td {
+    border-collapse: collapse;
+}
+ul, ol, li {
+    list-style: none;
+}
+:root {
+/*color*/
+    --point-color: #0094fb;
+    --menu-color: #0054d1;
+/*size*/
+    --container-size: 1280px;
+    --padding: 10px;
+    --top-icon-size: 22px;
+}
+body {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "NanumGothic", "malgungothic", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container {
+    width: var(--container-size);
+    margin: auto;
+   
+}
+/*상단영역 스타일*/
+header .container {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.top-menu {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.top-menu > ul {
+    display: flex;
+}
+.language {
+    height: 22px;
+    position: relative;
+    width: 60px;
+    margin-left: 20px;
+}
+.language span {
+    border-bottom: 1px solid #333;
+    display: block;
+    line-height: 22px;
+    padding-left:8px;
+}
+.language:hover span::after {
+    content: "<";
+}
+.language span::after {
+    content: ">";
+    font-size: 12px;
+}
+.language:hover .drop {
+    display: block;
+}
+.drop {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #333;
+    left: 0;
+    top: 22px;
+    background: #fff;
+    padding: 8px;
+    display: none;
+}
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.top-login {
+    width: var(--top-icon-size);
+    height: var(--top-icon-size);
+    line-height: var(--top-icon-size);
+    background-image: url('../images/ico-top-login@2x.png');
+}
+.top-join {
+    width: var(--top-icon-size);
+    height: var(--top-icon-size);
+    line-height: var(--top-icon-size);
+    background-image: url('../images/ico-top-join@2x.png');
+}
+.top-menu li a {
+    position: relative;
+}
+.top-menu li span {
+    background: var(--point-color);
+    display: none;
+    position: absolute;
+    top:0;
+    right: 30px;
+    width: 80px;
+    height: 20px;
+    line-height: 20px; 
+    text-align: center;
+    color: #fff;
+}
+.top-menu > ul > li {
+    padding:0 10px;
+}
+.top-menu li:hover span {
+   display: block;
+}
+.top-menu li span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    border-color: transparent transparent transparent var(--point-color) ;
+    border-width: 5px;
+    border-style: solid;
+}
+.gnb-area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.gnb-area h1 {
+    width: 15%;
+}
+.gnb-area h1 img {
+    width: 100%;
+}
+.gnb-area > div{
+    display: flex;
+}
+.gnb-area > div ul {
+    display: flex;
+    padding-right: 30px;
+}
+.gnb-area > div ul li {
+    font-size: 22px; 
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+.gnb-area > div ul li:hover {
+    color: var(--menu-color);
+}
+.gnb-area > div ul li::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    opacity: 0;
+    transition: 0.2s;
+}
+.gnb-area > div ul li:hover::after{
+    opacity: 1;
+    top: 10%;
+}
+.allmenu {
+    width:var(--top-icon-size);
+    height: var(--top-icon-size);
+    background-image: url('../images/ico-allmenu.png');
+    background-size: contain;
+}
+.search {
+    width:var(--top-icon-size);
+    height: var(--top-icon-size);
+    background-image: url('../images/ico-search@2x.png');
+    background-size: contain;
+}
+
+/*
+메인컨텐츠 영역
+비주얼영역
+*/
+
+#visual {
+    background:url(../images/img-visual-patient1.jpg) center center no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.user {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 150px;
+    width: 130px;
+}
+.user li {
+    background: rgba(0,84,209,0.8);
+    color: #fff;
+    border-radius: 0 35px 35px 0;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.user li span { 
+  
+}
+.user li:nth-child(1){
+    margin-bottom:10px;
+}
+.user li:nth-child(2){
+    background: rgba(100,100,100,0.8);
+    left: -60px;
+    transition: 0.5s;
+}
+.user li:nth-child(2):hover {
+    left: 0;
+    background: rgba(0,84,209,0.8);
+}
+.carer-white {
+    background-image: url('../images/ico-patient-carer-white@2x.png');
+    width: 40px;
+    height: 40px;
+}
+.expert-white {
+     background-image: url('../images/ico-expert-white@2x.png');
+    width: 40px;
+    height: 40px;
+}
+#visual h2 {
+    color: #fff;
+    padding-top: 200px;
+    font-size: 56px;
+}
+#visual p {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.hospital-link ul {
+    display: flex;
+}
+.hospital-link li {
+    width: 20%;
+    height: 70px;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.hospital-link li:hover .detail {
+    display: block;
+}
+.detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: inherit;
+    padding: 20px 20px 80px;
+    text-align: center;
+    background-image: url('../images/ico-arrow-white.png');
+    background-repeat: no-repeat;
+    background-position:  center bottom 30px;
+    display: none;
+}
+.detail h3 {
+    padding-bottom: 10px;
+}
+.detail p span {
+    font-size: 20px;
+    padding-top: 10px;
+    display: block;
+}
+.hospital-link li:nth-child(1) {
+    background: #2faaff;
+}
+.hospital-link li:nth-child(2) {
+    background: #0094fb;
+}
+.hospital-link li:nth-child(3) {
+    background: #2faaff;
+}
+.hospital-link li:nth-child(4) {
+    background: #0054d1;
+}
+.hospital-link li:nth-child(5) {
+    background: #003d7d;
+}
+.link {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/ico-external-link-white@2x.png');
+}
+
+.icon-link {
+    position: relative;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 33px;
+    height: 59px;
+    display: block;
+    background: url(../images/ico-chevron-left-sm-lightgray@2x.png) no-repeat;
+    font-size: 0;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 33px;
+    height: 59px;
+    display: block;
+    background: url(../images/ico-chevron-right-sm-lightgray@2x.png) no-repeat;
+    font-size: 0;
+}
+.icon-link ul {
+    display: flex;
+}
+.icon-link ul li {
+    width: 25%;
+    padding: 40px;
+}
+
+.icon-link ul li .ico {
+    width:60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+}
+.icon-link h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.print {
+    background-image: url('../images/ico-shortcut-print@2x.png');
+}
+.reser {
+    background-image: url('../images/ico-shortcut-reservation@2x.png');
+}
+.result {
+    background-image: url('../images/ico-shortcut-result@2x.png');
+}
+.global {
+    background-image: url('../images/ico-shortcut-global@2x.png');
+}

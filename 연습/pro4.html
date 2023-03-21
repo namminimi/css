@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: "맑은 고딕", sans-serif;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        #wrap {
+            width: 100%;
+            max-width: 1100px;
+            background: #eee;
+            margin: 0 auto;
+        }
+
+        li {
+            list-style-position: inside;
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        #header h1 {
+            font-size: 67px;
+            color: #222;
+        }
+
+        #header h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        #content #left {
+            float: left;
+            width: 20%;
+        }
+
+        #content #right {
+            float: right;
+            width: 70%;
+        }
+
+        .clearBoth::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .containor1 img {
+            margin-bottom: 15px;
+        }
+
+        .containor1 p {
+            margin-bottom: 15px;
+        }
+
+        .containor1 ul {
+            margin-bottom: 15px;
+        }
+
+        .containor2 {
+            float: right;
+        }
+
+        .containor2 dl {
+            float: right;
+        }
+
+        .containor3 {
+            float: left;
+        }
+
+        .containor3 p {
+            margin-top: 10px;
+        }
+
+        #footer {
+            margin-top: 50px;
+            border-top: 1px solid #555;
+        }
+
+        #footer .styleView {
+            margin: 40px 0 10px;
+        }
+
+        #imgs ul {
+            float: left;
+            
+        }
+
+        #imgs ul li {
+            float: right;
+            list-style: none;
+        }
+
+        #imgs ul li img {
+            
+        }
+
+        #imgs ul li:not(:first-child) {
+            
+        }
+
+        #imgs ul li span {
+            display: block;
+        }
+
+
+
+
+
+        
+            
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>ORGANIC</h1>
+            <h2>오가닉</h2>
+            <p>러프한 소재와 함께 자연 속의 공간을 풍부하게 경험할 수 있는 오가닉한 스타일</p>
+        </div>
+        <div id="content" class="clearBoth">
+            <div id="left">
+                <img src="./images/green_img.gif" alt="오가닉 디자인 사진">
+            </div>
+            <div id="right">
+                <div class="containor1">
+                    <img src="./images/title03_01.gif" alt="컨셉설명">
+                    <p>잃지 않는 공간을 디자인 컨셉으로 하여 자연 소재를 사용하고 고급스러우면서 감성 적인 분위기를 연출합니다. 
+                        내추럴과 상반되는 마감제와의 믹스 앤 매치, 그리고 따뜻하고 유기적인 패턴을 포인트로 주어 자칫 밋밋해 보일 
+                        수 있는 공간에 생동감을 주었습니다.</p>
+                    <ul>
+                        <li>자연 친화적인 공간 연출</li>
+                        <li>뉴트럴 컬러, 그린 포인트 컬러, 재질의 조화를 통한 내추럴한 분위기 연출</li>
+                        <li>유기적 패턴의 소풍과 미려한 곡선의 스킨다나비아 스타일의 가구로 스타일 완성</li>
+                    </ul>
+                </div>
+                <div class="containor2" class="clearBoth">
+                    <img src="./images/photo.gif" alt="흑백사진">
+                    <dl>
+                        <dt>책임디자이너</dt>
+                        <dd>김미화</dd>
+                    </dl>
+                </div>
+                <div class="containor3">
+                    <div><img src="./images/title03_02.gif" alt="라이프스타일"></div>
+                    <div><img src="./images/title04.gif" alt="자연이 느껴지는 그린라이프 스타일 설명"></div>
+                    <p>물질적인 풍요를 바라기보다 현재 상황에 만족하고 감사함을 가지며 소외된 계층에 관심을 가지고 더불어 잘사는 
+                        사회를 만들기 위해 적은 금액이라도 나눔을 실천하려고 노력합니다. 그린 라이프 스타일의 사람 들은 자연의 느낌을 
+                        좋아하지만 그렇다고 도시에서 멀리 떨어진 곳에서 살려고 하지는 않습니다. 대신 자연의 아름다움을 담은 주거 공간에서의 
+                        삶을 살고자 합니다.</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="styleView">
+                <img src="./images/title03_03.gif" alt="스타일뷰 사진">
+            </div>
+            <div id="imgs" class="clearBoth">
+                <ul>
+                    <li>
+                        <img src="./images/view_img01.gif" alt="오카닉키워드 사진">
+                        <span>keyword 오카닉키워드</span>
+                        <div>
+                            <a href="#"><img src="./images/detail_view.gif" alt="자세히보기링크"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/view_img02.gif" alt="오카닉이미지맵 사진">
+                        <span>imageMap 오가닉이미지맵</span>
+                        <div>
+                            <a href="#"><img src="./images/detail_view.gif" alt="자세히보기링크"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/view_img03.gif" alt="오가닉마감재 사진">
+                        <span>Material 오가닉마감재</span>
+                        <div>
+                            <a href="#"><img src="./images/detail_view.gif" alt="자세히보기링크"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

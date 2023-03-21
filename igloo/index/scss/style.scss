@@ -1,0 +1,282 @@
+//scss변수선언
+$color1 : rgb(0,132,203);
+$color2 : rgb(0,142,214);
+$color3 : rgb(25,204,201);
+$color4 : rgb(44,173,239);
+$color5 : rgb(66,90,211);
+$color6 : rgb(255,204,0);
+$color7 : #efefef;
+$content_width: 1200px;
+$default_gap: 16px;
+$content_gap: 70px;
+$border_color: #ccc;
+
+
+//믹스인 정의
+@mixin flexlayout($dir: row, $justify: space-between, $align:center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+    @content
+}
+
+@mixin position($po: absolute, $t: null, $l: null, $b:null, $r: null) {
+    position: $po;
+    top: $t;
+    left: $l;
+    bottom: $b;
+    right: $r;
+
+}
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "나눔 고딕", "맑은 고딕", sans-serif;
+}
+
+.inner_container {
+    width: 100%;
+    max-width: $content_width;
+    margin: 0 auto;
+}
+
+header {
+    #top_gnb {
+        border-bottom: 1px solid $border_color;
+        padding: 30px 0;
+        ul {
+            @include flexlayout($justify: flex-end);
+            li {
+                padding: 0 $default_gap / 2;
+            }
+        }
+    }
+    #top_menu {
+        @include flexlayout();
+        input {
+            border:1px solid $border_color;
+        }
+        padding: $default_gap;
+        ul {
+            @include flexlayout();
+            li {
+                padding: 0 $default_gap;
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: $color1;
+                    transition: 0.5s;
+                    @include position($t:-10px, $l: 0);
+                    opacity: 0;
+                }
+                &:hover {
+                    &::after {
+                        top: 5px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+main {
+    section {
+        padding: $content_gap 0;
+    }
+    .title {
+        text-align: center;
+        padding-bottom: $default_gap*2;
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+    }
+    #visual {
+        background-color: $color6;
+        color: #fff;
+        img {
+            width: 100%;
+        }
+    }
+    #info {
+        h2{
+            color: $color1;
+        }
+        ul {
+            @include flexlayout();
+            li {
+                text-align: center;
+                width: 30%;
+                
+                img {
+                    width: 80%;
+                }
+                h3 {
+                    padding-top: $default_gap;
+                }
+                a {
+                    width: 120px;
+                    border: 1px solid $color1;
+                    display: inline-block;
+                    line-height: 30px;
+                    margin-top: $default_gap;
+                    
+                }
+                &:hover {
+                    a {
+                        background-color: $color1;
+                        color: #fff;
+                    }                 
+                }
+            }
+        }
+    }
+    #blog {
+        background-color: $color7;
+        ul {
+            @include flexlayout();
+            li {
+                background-color: #fff;
+                width: 24%;
+                img {
+                    width: 100%;
+                }
+                .text {
+                    padding: $default_gap/2;
+                }
+                >div {
+                    &:nth-child(1) {
+                        position: relative;
+                        .blackbg {
+                            opacity: 0;
+                            @include position($t: 0, $l:0);
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            transition: 0.5s;
+                            a {
+                                @include position($t: 50%, $l: 50%);
+                                display: inline-block;
+                                width: 100px;
+                                line-height: 40px;
+                                border: 1px solid #fff;
+                                color: #fff;
+                                text-align: center;
+                                transform: translate(-50%, -50%);
+                                &:hover {
+                                    background-color: #fff;
+                                    color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    >div {
+                        &:nth-child(1) {
+                            .blackbg {
+                                opacity: 1;
+                            }
+                        }
+                }
+            }
+        }
+    }
+  }
+  #quick {
+    ul {
+        @include flexlayout();
+        li {
+            width: 24%;
+            text-align: center;
+            color: #fff;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            &:nth-child(1) {
+                background-color: $color2;
+            }
+            &:nth-child(2) {
+                background-color: $color3;
+            }
+            &:nth-child(3) {
+                background-color: $color4;
+            }
+            &:nth-child(4) {
+                background-color: $color5;
+            }
+            .move {
+                @include position($t: 0, $l: 0);
+                height: 400px;
+                transition: 0.5s;
+                width: 100%;
+                div {
+                    line-height: 1.2;
+                    height: 200px;
+                    padding: 0 $default_gap;
+                    @include flexlayout(column, center, center);
+                    &:nth-child(2) {
+                        background-color: rgba(0, 0, 0, 0.3);
+                        a {
+                            width: 100px;
+                            border: 1px solid #fff;
+                            line-height: 30px;
+                            margin-top: $default_gap/2;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .move {
+                    top: -200px;
+                }
+            }
+        }
+    }
+  }
+}
+
+#footer_menu {
+    border-top: 1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    div {
+        @include flexlayout();
+        border-right: 1px solid $border_color;
+        border-left: 1px solid $border_color;
+        ul {
+            @include flexlayout();
+            li {
+                border-right: 1px solid $border_color;
+            }
+        }
+        a {
+            line-height: 40px;
+            padding: 0 $default_gap;
+        }
+        > a {
+            border-left: 1px solid $border_color;
+        }
+    }
+}
+
+footer {
+    > .inner_container {
+        height: 120px;
+        @include flexlayout();
+        address {
+            width: 60%;
+        }
+        ul {
+            @include flexlayout();
+            li {
+                padding: 0 $default_gap;
+            }
+        }
+    }
+}

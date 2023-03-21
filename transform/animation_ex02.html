@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        #box {
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #box div {
+            background-color: black;
+            position: absolute;
+            
+        }
+
+        #top, #bottom {
+            width: 100%;
+            height: 10px;
+        }
+
+        #left, #right {
+            width: 10px;
+            height: 100%;
+        } 
+
+        #top {
+            right: 0;
+            top: 0;
+            animation: scaleX 0.8s;   
+        }
+
+        #bottom {
+            bottom: 0;
+            left: 0;
+            animation: scaleX 0.8s; 
+        }
+
+        #left {
+            left: 0;
+            top: 0;
+            animation: scaleY 0.8s;
+        }
+        #right {
+            right: 0;
+            bottom: 0;
+            animation: scaleY 0.8s;
+        }
+
+        #center {
+            width: 5px;
+            height: 40%;
+            left: 50%;
+            top: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            animation: centerY 0.8s, 0.8s;
+            animation-fill-mode: forwards;
+        }
+
+        h2, p {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fade 0.5s 1.6s;
+            animation-fill-mode: forwards;
+        }
+        h2 {
+            top: 20px;
+        }
+        p {
+            bottom: 30px;
+        }
+
+        @keyframes scaleX {
+            0%{width: 0;}
+            100%{width: 100%;}
+            
+        }
+
+        @keyframes scaleY {
+            0%{height: 0;}
+            100%{height: 100%;}
+        }
+
+        @keyframes centerY {
+            0%{height: 0; opacity: 0;}
+            100%{height: 40%; opacity: 1;}
+        }
+        @keyframes fade {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <div id="top"></div>
+            <div id="left"></div>
+            <div id="bottom"></div>
+            <div id="right"></div>
+            <div id="center"></div>
+            <h2>Green Academy</h2>
+            <p>green web</p>
+        </div>
+    </div>
+</body>
+</html>

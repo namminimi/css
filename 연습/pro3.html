@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "맑은 고딕", "sans-serif";
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        #wrap {
+            width: 100%;
+            padding: 15px;
+            background: #eee;
+        }
+
+        li {
+            list-style: none;
+            list-style-position: inside;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h2, h3 {
+            font-weight: normal;
+        }
+
+        #header .mainTitle {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #header #menuBar ul {
+            float: left;
+        }
+
+        #header #menuBar {
+            background: #333;
+            color: white;
+        }
+
+        #header #menuBar ul li {
+            float: left;
+            padding: 0 15px;
+        }
+
+        #header #menuBar .soloA {
+            float: right;
+            padding-right: 15px;
+        }
+
+        .clearBoth::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #content #left {
+            float: left;
+            margin-top: 15px;
+            width: 70%;
+        }
+
+        #content #right {
+            float: right;
+            width: 28%;
+            margin-top: 15px;
+        }
+
+        #content #left .containor1 {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        
+        #content #left .containor1 h2 {
+            padding-bottom: 3px 0;
+        }
+
+        #content #left .containor1 p {
+            padding: 3px 0;
+        }
+
+        #content #left .containor1 div {
+            background: #333;
+            color: white;
+            height: 130px;
+            padding: 30px 30px;
+            margin: 3px 0;
+        }
+
+
+        #content #right .containor2 {
+            background: white;
+            padding: 15px;
+        }
+
+        #content #right .containor2 h2 {
+            margin: 3px 0;
+        }
+
+        #content #right .containor2 div {
+            background: #333;
+            color: white;
+            height: 130px;
+            padding: 30px 30px;
+            margin: 3px 0;
+        }
+
+        #content #right .containor2 p {
+            padding: 3px 0;
+        }
+
+        #content #right .containor3 {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        #content #right .containor3 h2 {
+            margin: 3px 0;
+        }
+
+        #content #right .containor3 div {
+            background: #333;
+            color: white;
+            height: 130px;
+            padding: 20px 30px;
+            margin: 3px 0;
+        }
+
+        #content #right .containor3 div li:not(:last-child) {
+            padding-bottom: 10px;
+        }
+
+        #content #right .containor4 {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        #footer {
+            background: #333;
+            color: white;
+            height: 80px;
+            text-align: center;
+            padding: 30px;
+            line-height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="mainTitle">
+                <h1>My Wedsite</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div id="menuBar" class="clearBoth">
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+                <a class="soloA" href="#">link</a>
+            </div>
+        </div>
+        <div id="content" class="clearBoth">
+            <div id="left">
+                <div class="containor1">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div>image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="containor1">
+                    <h2>TITLE HEADING</h2>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <div>image</div>
+                    <h3>Title text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="containor2">
+                    <h2>About Me</h2>
+                    <div>image</div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim.</p>
+                </div>
+                <div class="containor3">
+                    <h2>Popular Post</h2>
+                    <div>
+                        <ul>
+                            <li>image</li>
+                            <li>image</li>
+                            <li>image</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="containor4">
+                    <h2>Follow Me</h2>
+                    <p>some text...</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>

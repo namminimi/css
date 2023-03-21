@@ -1,0 +1,175 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body {
+    font-family: "NanumSquare", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+#headIcon .menuList {
+    float: left;
+    padding-top: 5px;
+}
+
+#headIcon .menuList li {
+    float: left;
+    padding:0 20px;
+}
+
+#headIcon .menuList2 {
+    float: right;
+    padding-top: 5px;
+}
+
+#headIcon .menuList2 li {
+    float: left;
+    padding: 0 20px;
+}
+
+#header {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#headIcon {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#header h2 {
+    display: inline-block;
+}
+
+.clearboth {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+#mainImgs {
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    background-image: url('./images/visual.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#mainImg {
+    background-color: black;
+}
+
+#content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#subMenuBar {
+    padding: 30px 0;
+    border-bottom: 3px double #888;
+}
+
+#subMenuBar h2 {
+    display: inline-block;
+}
+
+#subMenuBar ul {
+    float: right;
+    padding-top: 10px;
+}
+
+#subMenuBar ul li {
+    float: left;
+    padding-left: 40px;
+}
+
+#container{
+    text-align: center;
+}
+
+#container h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+#container ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+}
+
+#banner div img {
+    float: left;
+}
+
+#banner .aa {
+    width: 50%;
+}
+
+#banner .bb {
+    width: 50%;
+}
+
+#banner .cc {
+    width: 25%;
+}
+
+#banner .dd {
+    width: 25%;
+}
+
+#footer1 .facebook {
+    float: left;
+}
+
+#footer1 ul {
+    float: left;
+}
+
+#footer1 ul li {
+    float: left;
+}
+
+#footer1 select {
+    float: right;
+}
+
+#footer1 {
+    background-color: aliceblue;
+    height: 60px;
+    padding: 20px;
+    
+}
+
+#footer1 #list {
+    
+}
+
+#footer1 ul {
+   margin-left: 700px; 
+}
+
+#footer1 ul li {
+    padding: 0 30px;
+}
+
+select[name="link"] {
+    width: 150px;
+}
+
+
+
+
+
+
+

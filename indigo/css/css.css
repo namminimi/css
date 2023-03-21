@@ -1,0 +1,173 @@
+body {
+    font-family: "맑은 고딕", Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #444;
+}
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+#wrap {
+    background-color: white;
+}
+
+#header {
+    padding: 20px 20px;
+    background-color: pink;
+}
+
+#header h2 {
+    font-size: 28px;
+    display: inline-block;
+}
+
+#header ul {
+    float: right;
+}
+
+#header ul li {
+    float: left;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.clearboth::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#mainImg {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/p-images/slide01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#content .container1, .container2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1 {
+    padding: 70px 0 40px;
+}
+
+.container1 h2 {
+    font-size: 40px;
+    color: #3f51b5;
+    float: left;
+}
+
+.container1 .block {
+    width: 6px;
+    height: 37px;
+    background-color: #eee;
+    float: left;
+    margin-left: 200px;
+}
+
+.container1 p {
+    float: right;
+    width: 800px;
+}
+
+.container2 ul {
+    float: left;
+    width: 100%;
+}
+
+.container2 ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 25px;
+}
+
+.container2 ul li h3 {
+    color: #3f51b5;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.container2 ul li img {
+    width: auto;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+.container3 h1 {
+    font-size: 40px;
+    color: #3f51b5;
+    margin: 80px 80px 30px;
+}
+
+.container3 {
+    width: 100%;
+}
+
+.container3 div {
+    float: left;
+    width: 25%;
+}
+
+.container3 div img {
+    width: 100%;
+}
+
+.container4 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container4 #left {
+    float: left;
+    width: 30%;
+}
+
+.container4 .list1 li {
+    padding-top: 150px; 
+    padding-bottom: 200px;
+}
+
+.container4 .list1 li h1 {
+    font-size: 40px;
+    color: #3f51b5;
+}
+
+.container4 #right {
+    float: right;
+    width: 70%;
+}
+
+.container4 .list2 li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 15px;
+    padding-top: 150px; 
+}
+
+.container4 .list2 li span {
+    display: block;
+}
+
+
+
+.container4 .list2 li img {
+    width: 250px;
+    height: 250px;
+}
+
+.list3 ul {
+    float: right;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            float: left;
+        }
+/* 겹치것을 끊어주는 역할 */
+        /* ul div {
+            clear: left;
+        } */
+/* after, before 내용 전에 생김 */
+        ul::after {
+            content: "";
+            display: block;
+            clear: left;
+        }
+
+        #box div {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            float: left;
+            /* 위로 띄우면 높이가 0이됨 */
+        }
+
+        /* #box::after {
+            content: "";
+            display: block;
+            clear: left;
+            /* 이 코드를 쓰면 위에 띄운것은 높이를 가지게 됨 */
+         
+    </style>
+</head>
+<body>
+    <div>
+        <ul class= "clear">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        
+        <div id="box" class= "clear">div입니다.
+            <div>box1</div>
+            <div>box2</div>
+            <div>box3</div>
+        </div>
+    </div>
+</body>
+</html>

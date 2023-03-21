@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes moveDiv {
+            0% {
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                top: 0;
+                left: 0;
+             }
+             12.5% {
+                width: 300px;
+                height: 100px;
+                background-color: lightblue;
+                top: 0;
+                left: 0;
+                
+
+             }
+             25% {
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+                top: 0;
+                left: 200px;
+        
+
+             }
+             37.5% {
+                width: 100px;
+                height: 300px;
+                background-color: lightblue;
+                top: 0;
+                left: 200px;
+             }
+             50% { 
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+                top: 200px;
+                left: 200px;
+             }
+             62.5% {
+                width: 300px;
+                height: 100px;
+                background-color: lightblue;
+                top: 200px;
+                left: 0;
+             }
+             75% {
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+                top: 200px;
+                left: 0;
+             }
+
+             87.5% {
+                width: 100px;
+                height: 300px;
+                background-color: lightblue;
+                top: 0;
+                left: 0;
+             }
+             100% {
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                top: 0;
+                left: 0;
+             }
+            }
+
+
+
+  
+
+
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: moveDiv 4s infinite linear;
+    
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

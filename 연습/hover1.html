@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: red;
+            height: 130px;
+        }
+
+        header>ul {
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+        }
+
+        header>ul>li {
+            position: relative;
+        }
+
+        header>ul ul {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: 0.5s;
+            background-color: pink;
+            opacity: 0;
+        }
+
+        header>ul li:hover ul {
+            top: 20px;
+            background-color: pink;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>green</h1>
+            <ul>
+                <li>
+                    <a href="">menu1</a>
+                    <ul>
+                        <li>GG</li>
+                        <li>GG</li>
+                        <li>GG</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">menu2</a>
+                    <ul>
+                        <li>GG</li>
+                        <li>GG</li>
+                        <li>GG</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">menu3</a>
+                    <ul>
+                        <li>GG</li>
+                        <li>GG</li>
+                        <li>GG</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">menu4</a>
+                    <ul>
+                        <li>GG</li>
+                        <li>GG</li>
+                        <li>GG</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+</body>
+</html>

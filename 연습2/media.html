@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 1024px 이하 */
+        @media screen and (max-width: 1024px) {
+            ul {
+                width: 100%;
+                max-width: 480px;
+            }
+        }
+
+        /* 768px 이하 */
+        @media screen and (max-width: 768px) {
+            ul {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+         /* 360px 이하 */
+        @media screen and (max-width: 360px) {
+            ul {
+                width: 100%;
+                max-width: 240px;
+            }
+        }
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: red;
+        }
+
+        div>ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+
+        div>ul>li {
+            background-color: orange;
+            width: 100px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+            <li>list11</li>
+            <li>list12</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        #wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #navbar > ul {
+            float: left;
+            width: 100%;
+            border-top: 2px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 16px 0;
+        }
+
+        #navbar > ul > li {
+            float: left;
+            width: 16.6666%;
+            position: relative;
+            padding: 16px 0;
+            border: 1px solid #333;
+        }
+     
+        li {
+            list-style: none;
+        }
+
+        
+        
+
+        .clearboth::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        li ul {
+            position: absolute;
+            background-color: fuchsia;
+            width: 100%;
+            top: 36px;
+            display: none;
+            border: 1px solid #333;
+
+        }
+
+        div > ul > li:hover ul {
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>GreenMall</h1>
+        </div>
+        <div id="navbar">
+            <ul class="clearboth">
+                <li>제품소개 
+                    <ul>
+                        <li>관련제품1</li>
+                    </ul>
+                </li>
+                <li >구매안내
+                    <ul>
+                        <li>관련제품1</li>
+                        <li>관련제품2</li>
+                        <li>관련제품3</li>
+                    </ul>
+                </li>
+                <li>고객센터
+                    <ul>
+                        <li>관련제품1</li>
+                        <li>관련제품2</li>
+                        <li>관련제품3</li>
+                    </ul>
+                </li>
+                <li>서비스
+                    <ul>
+                        <li>관련제품1</li>
+                        <li>관련제품2</li>
+                        <li>관련제품3</li>
+                    </ul>
+                </li>
+                <li>홍보센터
+                    <ul>
+                        <li>관련제품1</li>
+                        <li>관련제품2</li>
+                        <li>관련제품3</li>
+                    </ul>
+                </li>
+                <li>기업소개
+                    <ul>
+                        <li>관련제품1</li>
+                        <li>관련제품2</li>
+                        <li>관련제품3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
